@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "lc.kra.system.keyboard.GlobalKeyboardHook$2",
+    "methods" : [
+      { "name" : "handleKey", "parameterTypes" : ["int", "int", "char", "long"] }
+    ]
+  },
+  {
+    "name" : "java.lang.Object",
+    "methods" : [
+      { "name" : "notify", "parameterTypes" : [] }
+    ]
+  }
+]

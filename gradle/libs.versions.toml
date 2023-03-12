@@ -1,0 +1,14 @@
+[versions]
+quarkus = "2.16.4.Final"
+lombok = "1.18.26"
+influxClient = "6.7.0"
+
+[libraries]
+quarkus-bom = { module = "io.quarkus.platform:quarkus-bom", version.ref = "quarkus" }
+slf4j = { module = "org.slf4j:slf4j-api" }
+systemhook = { module = "lc.kra.system:system-hook", version = "3.8" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+influxClient = { module = "com.influxdb:influxdb-client-java", version.ref = "influxClient" }
+
+[plugins]
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
