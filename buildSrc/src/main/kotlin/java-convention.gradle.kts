@@ -12,6 +12,11 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
 }
 
+group = "dev.mieser.listener"
+
+val projectVersion: String? by project
+projectVersion?.takeIf { it.isNotBlank() }?.let { version = it }
+
 // Workaround for using Version Catalogs in Precompiled Script Plugins (see https://github.com/gradle/gradle/issues/15383)
 val libs = the<LibrariesForLibs>()
 

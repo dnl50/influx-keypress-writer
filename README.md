@@ -20,4 +20,14 @@ be used to configure the application:
 | `influx.connection.enable-compression` | Use gzip compression to compress the data.                                                 | true          |
 | `influx.point.measurement-name`        | The name of the measurement the data points belong to.                                     | key_event     |
 | `influx.point.host-identifier`         | An identifier to separate different hosts. Used as the value of the `host-identifier` tag. | local         |
-| `listener.ignore-releases`             | Ignore key releases.                                                                       | true          |
+| `listener.ignore-key-releases`         | Ignore key releases and only persist entries for key presses.                              | true          |
+
+## Building a native application
+
+See [here](https://quarkus.io/guides/building-native-image#prerequisites) for prerequisites. Afterwards just execute the
+following command:
+
+```sh
+gradlew build -PprojectVersion=<version> -Dquarkus.package.type=native
+```
+
