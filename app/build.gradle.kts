@@ -5,10 +5,10 @@ plugins {
 
 dependencies {
     implementation("io.quarkus:quarkus-core")
-    implementation(project(":keyboard-hook:keyboard-hook-api"))
+    implementation(project(":hook:hook-api"))
 
     runtimeOnly("io.quarkus:quarkus-hibernate-validator")
-    runtimeOnly(project(":keyboard-hook:keyboard-hook-impl"))
+    runtimeOnly(project(":hook:hook-impl"))
     runtimeOnly(project(":persistence:persistence-impl"))
     runtimeOnly(project(":listener"))
 }

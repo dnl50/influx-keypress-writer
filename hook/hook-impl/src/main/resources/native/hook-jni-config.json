@@ -1,0 +1,41 @@
+[
+  {
+    "name": "lc.kra.system.keyboard.GlobalKeyboardHook$2",
+    "methods": [
+      {
+        "name": "handleKey",
+        "parameterTypes": [
+          "int",
+          "int",
+          "char",
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lc.kra.system.mouse.GlobalMouseHook$2",
+    "methods": [
+      {
+        "name": "handleMouse",
+        "parameterTypes": [
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Object",
+    "methods": [
+      {
+        "name": "notify",
+        "parameterTypes": []
+      }
+    ]
+  }
+]

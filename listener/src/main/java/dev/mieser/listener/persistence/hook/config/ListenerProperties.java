@@ -7,6 +7,6 @@ import io.smallrye.config.WithDefault;
 public interface ListenerProperties {
 
     @WithDefault("true")
-    boolean ignoreKeyReleases();
+    boolean ignoreReleases();
 
 }

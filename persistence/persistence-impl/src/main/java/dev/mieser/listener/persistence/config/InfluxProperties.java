@@ -10,7 +10,9 @@ public interface InfluxProperties {
 
     Connection connection();
 
-    Point point();
+    Host host();
+
+    Measurement measurement();
 
     interface Connection {
 
@@ -31,15 +33,23 @@ public interface InfluxProperties {
 
     }
 
-    interface Point {
-
-        @WithDefault("key_event")
-        @NotEmpty
-        String measurementName();
+    interface Host {
 
         @WithDefault("local")
         @NotEmpty
-        String hostIdentifier();
+        String identifier();
+
+    }
+
+    interface Measurement {
+
+        @WithDefault("key_event")
+        @NotEmpty
+        String keyboard();
+
+        @WithDefault("mouse_event")
+        @NotEmpty
+        String mouse();
 
     }
 

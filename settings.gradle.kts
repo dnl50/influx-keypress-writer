@@ -5,12 +5,12 @@ pluginManagement {
     }
 }
 
-rootProject.name="influx-keypress-writer"
+rootProject.name = "influx-keypress-writer"
 
 include("app")
 include("domain")
-include("keyboard-hook:keyboard-hook-api")
-include("keyboard-hook:keyboard-hook-impl")
+include("hook:hook-api")
+include("hook:hook-impl")
 include("persistence:persistence-api")
 include("persistence:persistence-impl")
 include("listener")

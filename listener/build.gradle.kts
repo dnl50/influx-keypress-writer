@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
     api(project(":persistence:persistence-api"))
-    api(project(":keyboard-hook:keyboard-hook-api"))
+    api(project(":hook:hook-api"))
 
     implementation("io.smallrye.config:smallrye-config-core")
     implementation("jakarta.enterprise:jakarta.enterprise.cdi-api")

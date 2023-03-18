@@ -12,4 +12,6 @@ class InfluxConstants {
 
     public static final String CODE_FIELD = "code";
 
+    public static final String BUTTON_FIELD = "button";
+
 }
